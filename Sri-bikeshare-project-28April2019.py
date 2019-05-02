@@ -8,6 +8,8 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 
 CITIES = {'chicago', 'new york', 'washington'}
+MONTHS = {'january', 'february', 'march', 'april', 'may', 'june'}
+WEEKS = {'sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday' }
 
 def get_user_input(message, list):
     """
@@ -52,12 +54,12 @@ def get_filters():
 
     # get user input for month (all, january, february, ... , june)
     month = get_user_input('Provide us a month name or "all" to apply no month filter. \n(e.g. all, january, february, march, april, may, june) \n> ',
-                            ['january', 'february', 'march', 'april', 'may', 'june'])
+                            MONTHS)
 
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
     day = get_user_input('Provide the week day or "all"to apply no day filter. \n(e.g. all, monday - sunday) \n> ',
-                        ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday' ])
+                        WEEKS)
 
     print('-'*80)
     return city, month, day
