@@ -193,6 +193,7 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*80)
 
+# Displays the raw data used to compute the stats
 def disp_raw_data(df):
     '''
     Displays the raw data used to compute the stats
