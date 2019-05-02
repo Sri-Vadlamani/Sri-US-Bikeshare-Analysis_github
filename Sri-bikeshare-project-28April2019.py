@@ -202,10 +202,11 @@ def disp_raw_data(df):
     view_data = input("\nWould yoy like to see 5 lines of raw data? Please type 'yes' or 'no' \n").lower()
     while True:
         if view_data == 'no':
-            return
+            break
         if view_data == 'yes':
             print(df[row_index: row_index + 5])
             row_index = row_index + 5
+            continue
         view_data = input("\n Would you like to see five more rows of the data ? Please type 'yes' or 'no' \n").lower()
 
 def main():
