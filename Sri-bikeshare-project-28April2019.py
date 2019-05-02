@@ -7,6 +7,8 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
+CITIES = {'chicago', 'new york', 'washington'}
+
 def get_user_input(message, list):
     """
     An utility function to obtain user specific input value
@@ -42,7 +44,7 @@ def get_filters():
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
        city = input('Which city do you want to explore Chicago, New York or Washington? \n> ').lower()
-       if city not in ['chicago', 'new york', 'washington']:
+       if city not in CITIES:
            print("Invalid data:Please choose from the list")
        else:
            break
