@@ -15,6 +15,13 @@
 - [washington.csv](C:\Users\ganip\pdsnd_github\washington.csv)
 - [New York.csv](C:\Users\ganip\pdsnd_github\New york.csv)
 
+### Software used:
+
+ **The following software are used in order to complete this project:**
+- [Python 3, NumPy, and pandas installed using Anaconda](https://www.anaconda.com/)
+-	[A text editor, Atom.](https://atom.io/)
+-	[A terminal application](https://git-scm.com/)
+
 ### Credits
 *	Udacity course material
 *	Stack overflow when encountered some errors.
